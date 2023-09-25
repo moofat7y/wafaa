@@ -22,7 +22,11 @@ export default function Hero() {
                       key={index}
                     >
                       {item.href ? (
-                        <a className="flex items-center gap-2" href={item.href}>
+                        <a
+                          target="_blank"
+                          className="flex items-center gap-2"
+                          href={item.href}
+                        >
                           {item.icon} {item.text}
                         </a>
                       ) : (
@@ -44,7 +48,9 @@ export default function Hero() {
                       key={index}
                       className={`flex  items-center gap-2 p-3 rounded-full text-white ${item.color}`}
                     >
-                      <a href={item.href}>{item.icon}</a>
+                      <a target="_blank" href={item.href}>
+                        {item.icon}
+                      </a>
                     </li>
                   );
                 })}
