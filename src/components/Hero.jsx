@@ -87,13 +87,13 @@ export default function Hero() {
                 <a
                   href="./CV.rar"
                   download
-                  className="bg-primary-500 uppercase text-white py-1 px-6"
+                  className="bg-primary-500 text-center uppercase text-white py-1 px-6"
                 >
                   Download Cv
                 </a>
                 <a
                   href="#contact"
-                  className="bg-primary-500 uppercase text-white py-1 px-6"
+                  className="bg-primary-500 text-center uppercase text-white py-1 px-6"
                 >
                   Contact Us
                 </a>
