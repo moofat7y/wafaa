@@ -14,6 +14,7 @@ export default function Portfolios() {
       >
         <div className="p-[2px] relative w-full h-full">
           <img
+            loading="lazy"
             className="w-full h-full object-contain"
             src={item.image}
             alt=""
