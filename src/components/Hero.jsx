@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import profile from "/main-profile.jpg";
+import React from "react";
+import profile from "/main-profile.png";
 import { contactData, contactIcons } from "../utils/helpers";
 export default function Hero() {
   return (
