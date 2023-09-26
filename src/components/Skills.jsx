@@ -33,7 +33,12 @@ export default function Skills() {
     <section className="py-6">
       <MainHeader title={"Skills"} icon={<IoOptions />} />
       <div className="container">
-        <div className="p-[40px] bg-primary-500 text-white">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          className="p-[40px] bg-primary-500 text-white"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {skill_list}
           </div>

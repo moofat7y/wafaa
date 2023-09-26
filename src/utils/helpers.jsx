@@ -46,6 +46,9 @@ export const educations = [
     place: "Taif university",
     finish: "Graduation year | 2020",
   },
+];
+
+export const courses = [
   {
     title: "Advanced Motor Theory",
     finish: "12-9-2023",
@@ -72,6 +75,45 @@ export const educations = [
   },
 ];
 
+export const udemyCourses = [
+  {
+    title: "Crash course electronics and PCB Design ",
+    time: "110 hours",
+  },
+  {
+    title: "Learn to Design Your Own Boards by Altium",
+    time: "15 hours",
+  },
+  {
+    title: "Mastering the design of professional PCB by EasyEDA",
+    time: "4 hours",
+  },
+  {
+    title: "D Character creation in Cinema 4D: Modelling a 3D Robot",
+    time: "4 hours",
+  },
+  {
+    title: "The python and Django Learning Guid",
+    time: "9 hours",
+  },
+  {
+    title: "Learn Linux administration and linux command line",
+    time: "30 hours",
+  },
+  {
+    title: "ROS for beginners | : Basice , Motion , and Open CV",
+    time: "14 hours",
+  },
+  {
+    title: "Ros for beginners || : Localization, Navigation and SLAM",
+    time: "4.5 hours",
+  },
+  {
+    title: "ROS for beginners ||| : Web-based Navigation with ROSBridge",
+    time: "3 hours",
+  },
+];
+
 export const skills = [
   {
     title: "Programming Languages",
@@ -89,6 +131,11 @@ export const skills = [
       { label: "Matlab", prec: 82 },
       { label: "Arduino IDE", prec: 88 },
       { label: "Altium", prec: 90 },
+      { label: "EsayEDA", prec: 85 },
+      { label: "VS", prec: 90 },
+      { label: "Atom", prec: 88 },
+      { label: "Cinema", prec: 84 },
+      { label: "4D and Solidworks", prec: 94 },
     ],
   },
   {
@@ -97,6 +144,12 @@ export const skills = [
       { label: "Detail Oriented", prec: 90 },
       { label: "Problem Solving", prec: 84 },
       { label: "Leadership", prec: 80 },
+      { label: "Active listening", prec: 90 },
+      { label: "Time management", prec: 92 },
+      { label: "Emotional intelligence", prec: 87 },
+      { label: "Work under pressure", prec: 80 },
+      { label: "Team-player", prec: 88 },
+      { label: "Good reader and researcher", prec: 80 },
     ],
   },
 ];
@@ -137,4 +190,34 @@ export const portfoliosImages = [
   { image: img2, title: "Electronics" },
   { image: img3, title: "Mechanical Design" },
   { image: img4, title: "Iot" },
+];
+
+export const projects = [
+  {
+    title:
+      "Dogs breed and breast cancer classification using convolutional neural networks with Resnet18",
+    date: "2020",
+  },
+  {
+    title: "Arduino Based Smart Irrigation System",
+    date: "2020",
+  },
+  {
+    title: "Line follower robot using Arduino Uno",
+    date: "2020",
+  },
+  {
+    title: "Brain Tumor Detection by Image Processing Using MATLAB",
+    date: "2019",
+  },
+  {
+    title:
+      "Graduation project human health care monitors using Arduino uno (blood pressure, blood glucose, heartbeat, breathing counter, body temperature) with grade A",
+    date: "2017",
+  },
+  {
+    title:
+      "Password Door Lock Security System using Arduino and Keypad | 2016 Fire alarm circuit",
+    date: "2015",
+  },
 ];

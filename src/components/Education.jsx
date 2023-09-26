@@ -8,15 +8,24 @@ export default function Education() {
     return index % 2 === 0 ? (
       <div
         key={index}
-        className="mb-8 flex justify-between items-center w-full right-timeline"
+        className="mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline"
       >
         <div className="order-1 hidden md:block w-5/12"></div>
-        <div className="z-20  hidden md:flex items-center order-1 bg-primary-500 shadow-xl w-8 h-8 rounded-full">
+        <div
+          data-aos="fade"
+          className="z-20  hidden md:flex items-center order-1 bg-primary-500 shadow-xl w-8 h-8 rounded-full"
+        >
           <h1 className="mx-auto font-semibold text-lg text-white">
             {index + 1}
           </h1>
         </div>
-        <div className="order-1 bg-white rounded-lg shadow-xl w-full z-10 md:w-5/12 px-6 py-4">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="order-1 bg-white relative before:absolute before:content-[''] before:start-0 before:top-0 before:w-1 before:h-full before:bg-[#965c43] shadow-xl w-full z-10 md:w-5/12 px-6 py-4"
+        >
           <h3 className="mb-3 font-bold text-gray-800 text-xl">{item.title}</h3>
           {item.place && <h4>{item.place}</h4>}
           <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
@@ -27,15 +36,24 @@ export default function Education() {
     ) : (
       <div
         key={index}
-        className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+        className="mb-3 xl:mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
       >
         <div className="order-1 hidden md:block w-5/12"></div>
-        <div className="z-20  hidden md:flex items-center order-1 bg-primary-500 shadow-xl w-8 h-8 rounded-full">
+        <div
+          data-aos="fade"
+          className="z-20  hidden md:flex items-center order-1 bg-primary-500  shadow-xl w-8 h-8 rounded-full"
+        >
           <h1 className="mx-auto text-white font-semibold text-lg">
             {index + 1}
           </h1>
         </div>
-        <div className="order-1 bg-white rounded-lg shadow-xl w-full z-10 md:w-5/12 px-6 py-4">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="order-1 bg-white relative before:absolute before:content-[''] before:start-0 before:top-0 before:w-1 before:h-full before:bg-[#965c43] shadow-xl w-full z-10 md:w-5/12 px-6 py-4"
+        >
           <h3 className="mb-3 font-bold text-black text-xl">{item.title}</h3>
           {item.place && <h4>{item.place}</h4>}
           <p className="text-sm font-medium leading-snug tracking-wide text-black text-opacity-100">

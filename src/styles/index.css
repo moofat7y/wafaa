@@ -12,3 +12,7 @@
   background-position: center center;
   background-attachment: fixed;
 }
+
+#filters::-webkit-scrollbar {
+  width: 0px;
+}

@@ -1,11 +1,17 @@
 import React from "react";
 import profile from "/main-profile.png";
 import { contactData, contactIcons } from "../utils/helpers";
+import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="hero">
       <div className="banner"></div>
-      <section className="py-6">
+      <section
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        className="py-6"
+      >
         <div className="container">
           <div className="relative flex w-full -mt-[190px]">
             <div className="w-full text-center md:text-start  pt-[60px] pb-[40px] px-[40px] text-white z-[20] bg-primary-500 relative before:hidden md:before:block before:-z-[1] before:content-[''] before:absolute before:right-[-36px] before:top-0 before:w-[150px] before:h-full before:bg-primary-500 before:skew-x-[10deg]">
@@ -64,7 +70,13 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="py-6">
+      <section
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        className="py-6"
+      >
         <div className="container">
           <div
             style={{
