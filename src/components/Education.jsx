@@ -64,7 +64,7 @@ export default function Education() {
     );
   });
   return (
-    <section className="py-6">
+    <section id="education" className="py-6">
       <MainHeader title={"Education"} icon={<BiSolidBookBookmark />} />
       <div className="container">
         {/* <!-- component --> */}

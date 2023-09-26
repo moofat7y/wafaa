@@ -67,7 +67,7 @@ export default function Experince() {
     );
   });
   return (
-    <section className="py-6">
+    <section id="experience" className="py-6">
       <MainHeader title={"Experince"} icon={<BsFillLayersFill />} />
       <div className="container">
         <div className="containe mx-auto w-full h-full">

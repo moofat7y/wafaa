@@ -4,7 +4,7 @@ import { contactData, contactIcons } from "../utils/helpers";
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <section className="hero">
+    <div id="home" className="hero">
       <div className="banner"></div>
       <section
         data-aos="zoom-in-up"
@@ -71,6 +71,7 @@ export default function Hero() {
       </section>
 
       <section
+        id="about"
         data-aos="zoom-in-up"
         data-aos-easing="ease-out-cubic"
         data-aos-delay="300"
@@ -120,6 +121,6 @@ export default function Hero() {
           </div>
         </div>
       </section>
-    </section>
+    </div>
   );
 }

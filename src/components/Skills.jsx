@@ -15,7 +15,6 @@ export default function Skills() {
             <li key={skill.label}>
               <div className="flex mb-1 items-center justify-between">
                 <span>{skill.label}</span>
-                <span>{skill.prec} %</span>
               </div>
               <div className="bg-primary-700 h-[4px] relative w-full">
                 <div
@@ -30,7 +29,7 @@ export default function Skills() {
     );
   });
   return (
-    <section className="py-6">
+    <section id="skills" className="py-6">
       <MainHeader title={"Skills"} icon={<IoOptions />} />
       <div className="container">
         <div

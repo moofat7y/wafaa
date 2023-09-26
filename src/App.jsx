@@ -11,6 +11,7 @@ import UdemyCourses from "./components/UdemyCourses";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Projects from "./components/Projects";
+import SideBar from "./components/SideBar";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+      <SideBar />
       <Hero />
       <Education />
       <Courses />

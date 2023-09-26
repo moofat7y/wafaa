@@ -1,8 +1,53 @@
 import { GrMail } from "react-icons/gr";
-import { BsFillCalendar2WeekFill, BsTelephoneFill } from "react-icons/bs";
-import { FaLocationDot } from "react-icons/fa6";
+import {
+  BsFillCalendar2WeekFill,
+  BsFillPersonFill,
+  BsTelephoneFill,
+} from "react-icons/bs";
+import { FaBoxArchive, FaGraduationCap, FaLocationDot } from "react-icons/fa6";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
+import { IoIosSpeedometer } from "react-icons/io";
+import { IoOptions } from "react-icons/io5";
+import { PiBagSimpleFill, PiProjectorScreenChartFill } from "react-icons/pi";
+export const navList = [
+  {
+    id: "#home",
+    label: "Home",
+    icon: <BsFillPersonFill />,
+  },
+  {
+    id: "#about",
+    label: "About",
+    icon: <IoIosSpeedometer />,
+  },
+  {
+    id: "#education",
+    label: "Education",
+    icon: <FaGraduationCap />,
+  },
+  {
+    id: "#skills",
+    label: "Skills",
+    icon: <IoOptions />,
+  },
+  {
+    id: "#experience",
+    label: "Experience",
+    icon: <PiBagSimpleFill />,
+  },
+  {
+    id: "#portfolio",
+    label: "Portfolios",
+    icon: <FaBoxArchive />,
+  },
+  {
+    id: "#projects",
+    label: "Projects",
+    icon: <PiProjectorScreenChartFill />,
+  },
+];
+
 export const contactData = [
   {
     text: "+966580611708",
@@ -89,8 +134,13 @@ export const udemyCourses = [
     time: "4 hours",
   },
   {
-    title: "D Character creation in Cinema 4D: Modelling a 3D Robot",
+    title: "3D Character creation in Cinema 4D: Modelling a 3D Robot",
     time: "4 hours",
+  },
+  {
+    title:
+      "5- 3D Character creation in Cinema 4D: Modelling a 3D a Spider Robot",
+    time: "6 hours",
   },
   {
     title: "The python and Django Learning Guid",

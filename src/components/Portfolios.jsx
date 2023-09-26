@@ -27,7 +27,7 @@ export default function Portfolios() {
     );
   });
   return (
-    <section className="py-6">
+    <section id="portfolio" className="py-6">
       <MainHeader title={"Portfolio"} icon={<FaPersonRunning />} />
       <div
         data-aos="zoom-in-up"
