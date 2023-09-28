@@ -12,6 +12,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Projects from "./components/Projects";
 import SideBar from "./components/SideBar";
+import Goals from "./components/Goals";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
       <Experince />
       <Portfolios />
       <Projects />
+      <Goals />
       <Footer />
     </>
   );

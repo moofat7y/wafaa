@@ -23,10 +23,7 @@ export default function Hero() {
               <ul className="mb-4 list-none flex flex-col gap-3">
                 {contactData.map((item, index) => {
                   return (
-                    <li
-                      className="flex justify-center md:justify-start items-center gap-2"
-                      key={index}
-                    >
+                    <li className="flex items-center gap-2" key={index}>
                       {item.href ? (
                         <a
                           target="_blank"

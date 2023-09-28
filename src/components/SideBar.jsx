@@ -1,13 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { navList } from "../utils/helpers";
 import { AiOutlineClose } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function SideBar() {
   const [open, setOpen] = useState(false);
+  const sideBar = useRef();
+  const onClick = (e) => {
+    if (sideBar.current.contains(e.target)) {
+      return;
+    }
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("click", onClick);
+    return () => window.removeEventListener("click", onClick);
+  }, []);
 
   return (
     <nav
+      ref={sideBar}
       className={`fixed top-0 bg-white left-0 h-full w-[20%] min-w-[200px] max-w-[225px] z-50 shadow-md -translate-x-full duration-200 ${
         open ? "!translate-x-0" : ""
       }`}
