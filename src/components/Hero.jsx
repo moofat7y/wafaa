@@ -13,7 +13,10 @@ export default function Hero() {
       >
         <div className="container">
           <div className="relative flex w-full -mt-[190px]">
-            <div className="w-full text-center md:text-start  pt-[60px] pb-[40px] px-[40px] text-white z-[20] bg-primary-500 relative before:hidden md:before:block before:-z-[1] before:content-[''] before:absolute before:right-[-36px] before:top-0 before:w-[150px] before:h-full before:bg-primary-500 before:skew-x-[10deg]">
+            <div
+              id="bg-banner"
+              className="w-full text-center md:text-start  pt-[60px] pb-[40px] px-[40px] text-white z-[20] bg-primary-500 relative before:hidden lg:before:block before:-z-[1] before:content-[''] before:absolute before:right-[-36px] before:top-0 before:w-[150px] before:h-full before:bg-primary-500 before:skew-x-[10deg]"
+            >
               <h4 className="uppercase text-2xl font-bold">Wafaa Almadhoun</h4>
               <h4 className="capitalize text-lg mb-3">
                 Full stack Robotics engineer

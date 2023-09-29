@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import MainHeader from "./MainHeader";
 import { FaPersonRunning } from "react-icons/fa6";
 import { portfoliosImages } from "../utils/helpers";
+import Modal from "./Modal";
 
 const filters = [
-  "electronics departmen",
+  "electronics department",
   "mechanical department",
   "department AI and Ros",
   "Iot department",
@@ -12,6 +13,9 @@ const filters = [
 
 export default function Portfolios() {
   const [activeFilter, setActiveFilter] = useState(0);
+  const [showImage, setShowImage] = useState(null);
+  const [open, setOpen] = useState(null);
+
   const images_list = portfoliosImages.map((item, index) => {
     return (
       <div key={index} className={`p-[2px]`}>
@@ -23,16 +27,22 @@ export default function Portfolios() {
           {item.images.map((img, index) => {
             return (
               <div
+                onClick={() => {
+                  setOpen(true);
+                  setShowImage(img);
+                }}
                 data-aos={index % 2 === 0 ? "zoom-in-up" : "fade-left"}
                 key={index + "img"}
-                className={`relative ${
-                  index === 0 ? "col-span-2 row-span-2" : ""
+                className={`relative overflow-hidden w-full group p-1 bg-white before:content-[""] before:absolute before:duration-500 before:ease-in-out before:bg-[#0000006f] before:z-10 ${
+                  index === 0
+                    ? "col-span-2 row-span-2 before:inset-0 before:opacity-0 hover:before:opacity-100 "
+                    : "before:left-0 before:bottom-0 before:w-full before:h-[50%] before:opacity-0 hover:before:h-full hover:before:opacity-100"
                 }`}
               >
                 <img
                   src={img}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full duration-500 ease-in-out group-hover:scale-[1.2] h-full object-cover"
                 />
               </div>
             );
@@ -49,13 +59,13 @@ export default function Portfolios() {
           id="filters"
           className="filters overflow-x-auto flex justify-center mb-4"
         >
-          <ul className="flex-nowrap list-none cursor-pointer flex items-center gap-4">
+          <ul className="flex-nowrap w-full md:justify-center list-none cursor-pointer flex items-center gap-4">
             {filters.map((item, index) => {
               return (
                 <li
                   onClick={() => setActiveFilter(index)}
                   key={index}
-                  className={`py-2 uppercase whitespace-nowrap text-primary-300 border-b-4 border-transparent duration-200 ${
+                  className={`py-2 uppercase text-sm whitespace-nowrap text-primary-300 border-b-4 border-transparent duration-200 ${
                     index === activeFilter ? "!border-primary-500" : ""
                   }`}
                 >
@@ -67,6 +77,8 @@ export default function Portfolios() {
         </div>
         <div className="">{images_list[activeFilter]}</div>
       </div>
+
+      <Modal image={showImage} open={open} setOpen={setOpen} />
     </section>
   );
 }

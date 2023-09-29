@@ -138,8 +138,7 @@ export const udemyCourses = [
     time: "4 hours",
   },
   {
-    title:
-      "5- 3D Character creation in Cinema 4D: Modelling a 3D a Spider Robot",
+    title: "3D Character creation in Cinema 4D: Modelling a 3D a Spider Robot",
     time: "6 hours",
   },
   {

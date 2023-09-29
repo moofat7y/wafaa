@@ -20,3 +20,14 @@ html {
 #filters::-webkit-scrollbar {
   width: 0px;
 }
+
+#bg-banner {
+  background-image: url("../../public/bg.png");
+  background-size: cover;
+  background-position: left center;
+}
+#bg-banner::before {
+  background-image: url("../../public/bg.png");
+  background-size: 736px;
+  background-position: 185px center;
+}
