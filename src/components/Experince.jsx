@@ -71,7 +71,7 @@ export default function Experince() {
       <MainHeader title={"Experince"} icon={<BsFillLayersFill />} />
       <div className="container">
         <div className="containe mx-auto w-full h-full">
-          <div className="relative wrap overflow-hidden p-10 h-full">
+          <div className="relative wrap overflow-hidden py-10 px-2 md:px-10 h-full">
             <div
               className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
               style={{ left: "50%" }}
