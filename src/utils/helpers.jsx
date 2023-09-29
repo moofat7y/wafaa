@@ -237,11 +237,12 @@ import ro4 from "/grades/ro4.png";
 import a1 from "/grades/a1.png";
 import a2 from "/grades/a2.png";
 import a3 from "/grades/a3.png";
-import a4 from "/grades/a4.png";
 
 import el1 from "/grades/el1.png";
 import el2 from "/grades/el2.png";
 import el3 from "/grades/el3.png";
+import el4 from "/grades/el4.png";
+import el5 from "/grades/el5.png";
 
 import img1 from "/Image1.png";
 import img2 from "/Image2.png";
@@ -249,7 +250,7 @@ import img3 from "/Image3.png";
 import img4 from "/Image4.png";
 export const portfoliosImages = [
   {
-    images: [ro1, ro2, ro3, ro4, img1],
+    images: [ro1, ro2, ro3, ro4, a1, a2, a3, img1],
     title: "mechanical department",
     desc: `I've always been passionate about mechanics. In recent years, I've worked on acquiring a
 mechanical mindset, understanding the concept of motion, its transfer, and application, as well as
@@ -258,7 +259,7 @@ SolidWorks and Shapr 3D. Finally, I learned isometric drawing using Cinema 4D, a
 samples of my designs.`,
   },
   {
-    images: [a1, a2, a3, a4, img2],
+    images: [img2],
     title: "electronics department",
     desc: `I learned and worked on electronics academically during my studies and afterwards, I applied
 dozens of electronic circuits. I can design and simulate using Proteus, EasyEDA, and Altium. I've
@@ -267,7 +268,7 @@ worked with various motors, and now I'm in the process of mastering circuit boar
 printing. Here are some examples of my work.`,
   },
   {
-    images: [el1, el2, el3, img3],
+    images: [el1, el2, el3, el4, el5, img3],
     title: "Ros and AI department",
     desc: `I have extensive experience in the field of computer vision and image processing in artificial
 intelligence, and I have worked on several projects , In ROS (Robot Operating System), I initially

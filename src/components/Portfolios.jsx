@@ -5,8 +5,8 @@ import { portfoliosImages } from "../utils/helpers";
 import Modal from "./Modal";
 
 const filters = [
-  "electronics department",
   "mechanical department",
+  "electronics department",
   "department AI and Ros",
   "Iot department",
 ];
@@ -23,7 +23,10 @@ export default function Portfolios() {
           {item.desc}
         </p>
 
-        <div className="grid gap-4 grid-cols-3">
+        <div
+          style={{ gridAutoRows: "230px" }}
+          className="grid gap-4 grid-cols-3"
+        >
           {item.images.map((img, index) => {
             return (
               <div
@@ -35,8 +38,8 @@ export default function Portfolios() {
                 key={index + "img"}
                 className={`relative overflow-hidden w-full group p-1 bg-white before:content-[""] before:absolute before:duration-500 before:ease-in-out before:bg-[#0000006f] before:z-10 ${
                   index === 0
-                    ? "col-span-2 row-span-2 before:inset-0 before:opacity-0 hover:before:opacity-100 "
-                    : "before:left-0 before:bottom-0 before:w-full before:h-[50%] before:opacity-0 hover:before:h-full hover:before:opacity-100"
+                    ? "col-span-3 md:col-span-2 row-span-1 md:row-span-2 before:inset-0 before:opacity-0 hover:before:opacity-100 "
+                    : "col-span-3 md:col-span-1 before:left-0 before:bottom-0 before:w-full before:h-[50%] before:opacity-0 hover:before:h-full hover:before:opacity-100"
                 }`}
               >
                 <img
