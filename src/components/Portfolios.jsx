@@ -29,7 +29,11 @@ export default function Portfolios() {
                   index === 0 ? "col-span-2 row-span-2" : ""
                 }`}
               >
-                <img src={img} alt="" className="w-full h-full object-cover" />
+                <img
+                  src={img}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
               </div>
             );
           })}
