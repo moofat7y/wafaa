@@ -259,7 +259,7 @@ SolidWorks and Shapr 3D. Finally, I learned isometric drawing using Cinema 4D, a
 samples of my designs.`,
   },
   {
-    images: [img2],
+    images: [el1, el2, el3, el4, el5, img3],
     title: "electronics department",
     desc: `I learned and worked on electronics academically during my studies and afterwards, I applied
 dozens of electronic circuits. I can design and simulate using Proteus, EasyEDA, and Altium. I've
@@ -268,7 +268,7 @@ worked with various motors, and now I'm in the process of mastering circuit boar
 printing. Here are some examples of my work.`,
   },
   {
-    images: [el1, el2, el3, el4, el5, img3],
+    images: [img2],
     title: "Ros and AI department",
     desc: `I have extensive experience in the field of computer vision and image processing in artificial
 intelligence, and I have worked on several projects , In ROS (Robot Operating System), I initially

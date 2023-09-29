@@ -25,10 +25,10 @@ function App() {
       <SideBar />
       <Hero />
       <Education />
+      <Experince />
       <Courses />
       <UdemyCourses />
       <Skills />
-      <Experince />
       <Portfolios />
       <Projects />
       <Goals />
