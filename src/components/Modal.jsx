@@ -20,7 +20,7 @@ const Modal = ({ image, open, setOpen }) => {
     >
       <div
         ref={modalRef}
-        className="relative w-full h-full md:w-[50%] md:h-[50%]"
+        className="relative w-full h-[50%] md:w-[50%] md:h-[50%]"
       >
         <AiOutlineClose
           onClick={() => setOpen(false)}
