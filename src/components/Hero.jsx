@@ -1,7 +1,6 @@
 import React from "react";
 import profile from "/main-profile.png";
 import { contactData, contactIcons } from "../utils/helpers";
-import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <div id="home" className="hero">
@@ -101,7 +100,7 @@ export default function Hero() {
             <div className="p-[20px] border-t">
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <a
-                  href="./CV.rar"
+                  href="./grade.rar"
                   download
                   className="bg-primary-500 text-center uppercase text-white py-1 px-6"
                 >

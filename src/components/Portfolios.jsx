@@ -14,27 +14,33 @@ export default function Portfolios() {
   const [activeFilter, setActiveFilter] = useState(0);
   const images_list = portfoliosImages.map((item, index) => {
     return (
-      <div key={index} className={`p-[2px] bg-white relative aspect-video`}>
-        <div className="p-[2px] relative w-full h-full">
-          <img
-            loading="lazy"
-            className="w-full h-full object-contain"
-            src={item.image}
-            alt=""
-          />
+      <div key={index} className={`p-[2px]`}>
+        <p data-aos="fade-right" className="text-sm mb-4">
+          {item.desc}
+        </p>
+
+        <div className="grid gap-4 grid-cols-3">
+          {item.images.map((img, index) => {
+            return (
+              <div
+                data-aos={index % 2 === 0 ? "zoom-in-up" : "fade-left"}
+                key={index + "img"}
+                className={`relative ${
+                  index === 0 ? "col-span-2 row-span-2" : ""
+                }`}
+              >
+                <img src={img} alt="" className="w-full h-full object-cover" />
+              </div>
+            );
+          })}
         </div>
       </div>
     );
   });
   return (
-    <section id="portfolio" className="py-6">
+    <section id="portfolio" className="py-6 overflow-hidden">
       <MainHeader title={"Portfolio"} icon={<FaPersonRunning />} />
-      <div
-        data-aos="zoom-in-up"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-        className="container"
-      >
+      <div className="container">
         <div
           id="filters"
           className="filters overflow-x-auto flex justify-center mb-4"
@@ -55,9 +61,7 @@ export default function Portfolios() {
             })}
           </ul>
         </div>
-        <div className="grid grid-cols-1 gap-3">
-          {images_list[activeFilter]}
-        </div>
+        <div className="">{images_list[activeFilter]}</div>
       </div>
     </section>
   );
