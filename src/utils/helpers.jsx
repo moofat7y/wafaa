@@ -214,7 +214,7 @@ export const experince = [
     title: "Full Stack Robotics Engineer",
     status: "training",
     date: "Jun 2022 - Sep 2022",
-    desc: "best Intern engineer in all branches with 18 tasks completed , At smart methods company.",
+    desc: "Best Intern engineer in all branches with 18 tasks completed , At smart methods company.",
   },
   {
     title: "Digital Markting",
@@ -278,7 +278,7 @@ successfully integrated them with Arduino as well.`,
   {
     images: [img4],
     title: "Iot department",
-    desc: `front-end on work to how learned I've .programming in s’ initialprogress good made I've
+    desc: `Front-end on work to how learned I've .programming in s’ initial progress good made I've
 and ,APIs with dealing experience gained also I've .JavaScript and CSS, ,HTML using development
 development app mobile for framework Native React the using in dabbled even I've.`,
   },
