@@ -80,7 +80,7 @@ export const contactIcons = [
     text: "wafa'a-almadhoun",
     icon: <BiLogoLinkedin />,
     color: "bg-[#1565C0]",
-    href: "http://www.linkedin.com/wafa'a-almadhoun",
+    href: "https://www.linkedin.com/in/wafa%E2%80%99a-almadhoun-8623a245/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     text: "wafa'a-almadhoun",

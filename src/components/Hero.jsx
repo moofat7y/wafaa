@@ -110,10 +110,11 @@ export default function Hero() {
                   Download References
                 </a>
                 <a
-                  href="#contact"
+                  href="./Wafa’a Almadhoun CV .pdf"
+                  download
                   className="bg-primary-500 text-center uppercase text-white py-1 px-6"
                 >
-                  Contact Us
+                  Download CV
                 </a>
               </div>
             </div>
