@@ -195,7 +195,8 @@ export const skills = [
       { label: "VS", prec: 90 },
       { label: "Atom", prec: 88 },
       { label: "Cinema", prec: 84 },
-      { label: "4D and Solidworks", prec: 94 },
+      { label: "Cinema 4D", prec: 94 },
+      { label: "Solid Works", prec: 94 },
     ],
   },
   {
@@ -290,9 +291,7 @@ successfully integrated them with Arduino as well.`,
   {
     images: [img4],
     title: "Iot department",
-    desc: `Front-end on work to how learned I've .programming in s’ initial progress good made I've
-and ,APIs with dealing experience gained also I've .JavaScript and CSS, ,HTML using development
-development app mobile for framework Native React the using in dabbled even I've.`,
+    desc: `I've made good progress initial’s in programming. I've learned how to work on front-end development using HTML, CSS, and JavaScript. I've also gained experience dealing with APIs, and I've even dabbled in using the React Native framework for mobile app development`,
   },
 ];
 
