@@ -46,6 +46,11 @@ export const navList = [
     label: "Projects",
     icon: <PiProjectorScreenChartFill />,
   },
+  {
+    id: "#goals",
+    label: "Goals",
+    icon: <GoGoal />,
+  },
 ];
 
 export const contactData = [
@@ -97,26 +102,32 @@ export const courses = [
   {
     title: "Advanced Motor Theory",
     finish: "12-9-2023",
+    time: "2 hours",
   },
   {
     title: "Robot and artificial intelligence",
     finish: "29-8-2022",
+    time: "15 hours",
   },
   {
     title: "Designing an Online store course",
     finish: "25-6-2020",
+    time: "60 hours",
   },
   {
     title: "Programming smart phone application using Native React",
     finish: "5-7-2020",
+    time: "20 hours",
   },
   {
     title: "Certification of participation in LEGO Education SPIKE Prime",
     finish: "28-7-2020",
+    time: "6 hours",
   },
   {
     title: "Digital Marketing course",
     finish: "18-9-2020",
+    time: "15 hours",
   },
 ];
 
@@ -248,9 +259,10 @@ import img1 from "/Image1.png";
 import img2 from "/Image2.png";
 import img3 from "/Image3.png";
 import img4 from "/Image4.png";
+import { GoGoal } from "react-icons/go";
 export const portfoliosImages = [
   {
-    images: [ro1, ro2, ro3, ro4, a1, a2, a3, img1],
+    images: [ro1, ro2, ro3, ro4, a1, a2, a3, img3],
     title: "mechanical department",
     desc: `I've always been passionate about mechanics. In recent years, I've worked on acquiring a
 mechanical mindset, understanding the concept of motion, its transfer, and application, as well as
@@ -259,7 +271,7 @@ SolidWorks and Shapr 3D. Finally, I learned isometric drawing using Cinema 4D, a
 samples of my designs.`,
   },
   {
-    images: [el1, el2, el3, el4, el5, img3],
+    images: [el3, el4, el2, el5, el1, img2],
     title: "electronics department",
     desc: `I learned and worked on electronics academically during my studies and afterwards, I applied
 dozens of electronic circuits. I can design and simulate using Proteus, EasyEDA, and Altium. I've
@@ -268,7 +280,7 @@ worked with various motors, and now I'm in the process of mastering circuit boar
 printing. Here are some examples of my work.`,
   },
   {
-    images: [img2],
+    images: [img1],
     title: "Ros and AI department",
     desc: `I have extensive experience in the field of computer vision and image processing in artificial
 intelligence, and I have worked on several projects , In ROS (Robot Operating System), I initially
@@ -308,8 +320,11 @@ export const projects = [
     date: "2017",
   },
   {
-    title:
-      "Password Door Lock Security System using Arduino and Keypad | 2016 Fire alarm circuit",
+    title: "Password Door Lock Security System using Arduino and Keypad",
+    date: "2016",
+  },
+  {
+    title: "Fire alarm circuit",
     date: "2015",
   },
 ];

@@ -30,6 +30,9 @@ export default function Courses() {
           <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
             {item.finish}
           </p>
+          <span className="text-[14px] capitalize font-semibold">
+            {item.time}
+          </span>
         </div>
       </div>
     ) : (
@@ -57,6 +60,9 @@ export default function Courses() {
           <p className="text-sm font-medium leading-snug tracking-wide text-gray-900 text-opacity-100">
             {item.finish}
           </p>
+          <span className="text-[14px] capitalize font-semibold">
+            {item.time}
+          </span>
         </div>
       </div>
     );

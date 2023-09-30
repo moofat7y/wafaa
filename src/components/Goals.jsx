@@ -4,7 +4,7 @@ import { GoGoal } from "react-icons/go";
 
 export default function Goals() {
   return (
-    <section className="py-6">
+    <section id="goals" className="py-6">
       <MainHeader title={"Goals"} icon={<GoGoal />} />
       <div className="container">
         <div

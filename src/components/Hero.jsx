@@ -22,7 +22,7 @@ export default function Hero() {
                 Full stack Robotics engineer
               </h4>
 
-              <ul className="mb-4 list-none flex flex-col gap-3">
+              <ul className="mb-4 w-fit mx-auto md:w-full list-none flex flex-col gap-3">
                 {contactData.map((item, index) => {
                   return (
                     <li className="flex items-center gap-2" key={index}>
@@ -107,7 +107,7 @@ export default function Hero() {
                   download
                   className="bg-primary-500 text-center uppercase text-white py-1 px-6"
                 >
-                  Download Cv
+                  Download References
                 </a>
                 <a
                   href="#contact"

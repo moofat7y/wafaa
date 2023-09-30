@@ -13,15 +13,15 @@ export default function Skills() {
         <ul className="list-none flex flex-col gap-2">
           {item.skills.map((skill, index) => (
             <li key={skill.label}>
-              <div className="flex mb-1 items-center justify-between">
-                <span>{skill.label}</span>
+              <div className="flex mb-1  items-center justify-center">
+                <span className="">{skill.label}</span>
               </div>
-              <div className="bg-primary-700 h-[4px] relative w-full">
+              {/* <div className="bg-primary-700 h-[4px] relative w-full">
                 <div
                   style={{ width: `${skill.prec}%` }}
                   className="bg-white absolute left-0 top-0 h-full"
                 ></div>
-              </div>
+              </div> */}
             </li>
           ))}
         </ul>
