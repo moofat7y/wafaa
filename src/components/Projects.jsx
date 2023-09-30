@@ -8,7 +8,11 @@ export default function Projects() {
       <div
         key={index}
         data-aos="fade-up"
-        className="box p-5 bg-white shadow-sm border duration-300 text-center"
+        className={`box p-5 bg-white shadow-sm border duration-300 text-center ${
+          projects.length === index + 1 && projects.length % 3 != 0
+            ? "md:col-start-2 md:col-end-3"
+            : ""
+        }`}
       >
         <h4
           className="date mb-5 w-fit mx-auto border px-2 rounded-2xl bg-primary-500 text-white"

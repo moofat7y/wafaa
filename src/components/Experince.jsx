@@ -8,7 +8,9 @@ export default function Experince() {
     return index % 2 === 0 ? (
       <div
         key={index}
-        className="mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline"
+        className={`${
+          index + 1 === experince.length ? "!mb-0" : ""
+        } mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline`}
       >
         <div className="order-1 hidden md:block w-5/12"></div>
         <div
@@ -26,7 +28,9 @@ export default function Experince() {
           data-aos-duration="1000"
           className="order-1 bg-white relative before:absolute before:content-[''] before:start-0 before:top-0 before:w-1 before:h-full before:bg-[#965c43] shadow-xl w-full z-10 md:w-5/12 px-6 py-4"
         >
-          <h3 className="mb-3 font-bold text-gray-800 text-xl">{item.title}</h3>
+          <h3 className={` mb-3 font-bold text-gray-800 text-xl`}>
+            {item.title}
+          </h3>
           <h4 className="capitalize font-semibold mb-1">{item.status}</h4>
           <h4 className="mb-1">{item.date}</h4>
           <p className="text-sm font-medium leading-snug tracking-wide text-black text-opacity-100">
@@ -37,7 +41,9 @@ export default function Experince() {
     ) : (
       <div
         key={index}
-        className="mb-3 xl:mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+        className={`${
+          index + 1 === experince.length ? "!mb-0" : ""
+        } mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline`}
       >
         <div className="order-1 hidden md:block w-5/12"></div>
         <div
@@ -71,7 +77,7 @@ export default function Experince() {
       <MainHeader title={"Experince"} icon={<BsFillLayersFill />} />
       <div className="container">
         <div className="containe mx-auto w-full h-full">
-          <div className="relative wrap overflow-hidden py-10 px-2 md:px-10 h-full">
+          <div className="relative wrap overflow-hidden pt-10 pb-0 px-2 md:px-10 h-full">
             <div
               className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
               style={{ left: "50%" }}

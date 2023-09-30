@@ -8,7 +8,9 @@ export default function Education() {
     return index % 2 === 0 ? (
       <div
         key={index}
-        className="mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline"
+        className={`${
+          index + 1 === educations.length ? "!mb-0" : ""
+        } mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline`}
       >
         <div className="order-1 hidden md:block w-5/12"></div>
         <div
@@ -36,7 +38,9 @@ export default function Education() {
     ) : (
       <div
         key={index}
-        className="mb-3 xl:mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+        className={`${
+          index + 1 === educations.length ? "!mb-0" : ""
+        } mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline`}
       >
         <div className="order-1 hidden md:block w-5/12"></div>
         <div
@@ -69,7 +73,7 @@ export default function Education() {
       <div className="container">
         {/* <!-- component --> */}
         <div className="containe mx-auto w-full h-full">
-          <div className="relative wrap overflow-hidden py-10 px-2 md:px-10 h-full">
+          <div className="relative wrap overflow-hidden pt-10 pb-0 px-2 md:px-10 h-full">
             <div
               className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
               style={{ left: "50%" }}

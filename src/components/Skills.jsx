@@ -16,12 +16,6 @@ export default function Skills() {
               <div className="flex mb-1  items-center justify-center">
                 <span className="">{skill.label}</span>
               </div>
-              {/* <div className="bg-primary-700 h-[4px] relative w-full">
-                <div
-                  style={{ width: `${skill.prec}%` }}
-                  className="bg-white absolute left-0 top-0 h-full"
-                ></div>
-              </div> */}
             </li>
           ))}
         </ul>
@@ -38,7 +32,7 @@ export default function Skills() {
           data-aos-duration="1000"
           className="p-[40px] bg-primary-500 text-white"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid justify-center grid-cols-1 lg:grid-cols-3 gap-8">
             {skill_list}
           </div>
         </div>
