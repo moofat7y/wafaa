@@ -43,12 +43,12 @@ export default function Experince() {
         key={index}
         className={`${
           index + 1 === experince.length ? "!mb-0" : ""
-        } mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline`}
+        } mb-3 xl:mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline`}
       >
         <div className="order-1 hidden md:block w-5/12"></div>
         <div
           data-aos="fade"
-          className="z-20  hidden md:flex items-center order-1 bg-primary-500 shadow-xl w-8 h-8 rounded-full"
+          className="z-20 hidden md:flex items-center order-1 bg-primary-500 shadow-xl w-8 h-8 rounded-full"
         >
           <h1 className="mx-auto text-white font-semibold text-lg">
             {index + 1}

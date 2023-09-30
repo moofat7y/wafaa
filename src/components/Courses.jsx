@@ -42,7 +42,7 @@ export default function Courses() {
         key={index}
         className={`${
           index + 1 === courses.length ? "!mb-0" : ""
-        } mb-3 xl:mb-8 flex justify-between items-center w-full right-timeline`}
+        } mb-3 xl:mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline`}
       >
         <div className="order-1 hidden md:block w-5/12"></div>
         <div
