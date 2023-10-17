@@ -107,12 +107,12 @@ export const courses = [
   {
     title: "Robot and artificial intelligence",
     finish: "29-8-2022",
-    time: "15 hours",
+    time: "60 hours",
   },
   {
     title: "Designing an Online store course",
     finish: "25-6-2020",
-    time: "60 hours",
+    time: "15 hours",
   },
   {
     title: "Programming smart phone application using Native React",
@@ -194,7 +194,6 @@ export const skills = [
       { label: "EsayEDA", prec: 85 },
       { label: "VS", prec: 90 },
       { label: "Atom", prec: 88 },
-      { label: "Cinema", prec: 84 },
       { label: "Cinema 4D", prec: 94 },
       { label: "Solid Works", prec: 94 },
     ],
